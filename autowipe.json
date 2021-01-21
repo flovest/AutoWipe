@@ -1,0 +1,20 @@
+{
+  "bp_wipe_days": [ "4" ],
+  "map_wipe_days": [ "4" ],
+  "bp_wipe_time": "2200",
+  "map_wipe_time": "1500",
+  "bp_wipe_types": [ "3" ],
+  "map_wipe_types": [ "1" ],
+  "first_bp_wipe": "2021-2-2",
+  "first_map_wipe": "2021-1-21",
+
+  "wipe_check_interval_seconds": "10",
+  "date_parse_format": "%Y-%m-%d",
+  "bp_wipe_command": "/usr/local/bin/AutoWipe/wipe.sh bpwipe",
+  "map_wipe_command": "/usr/local/bin/AutoWipe/wipe.sh mapwipe",
+  "log_file_location": "/usr/local/bin/AutoWipe/autowipe.log",
+  "log_level": "4",
+  "time_zone": "CET",
+  "wipe_command_retries_on_fail": "-1",
+  "append_date_to_logfile_name": "true"
+}
