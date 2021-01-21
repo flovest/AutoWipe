@@ -27,7 +27,7 @@ sudo chown -R ./ <serviceuser>
 "bp_wipe_days": [ "4" ]
 #A list of days at which the server should execute the bp_wipe_command | 1=Monday ... 7=Sunday
 
-"map_wipe_days": [ "4" ]\
+"map_wipe_days": [ "4" ]
 #A list of days at which the server should execute the map_wipe_command | 1=Monday ... 7=Sunday
 
 "bp_wipe_time": "2200"
@@ -93,9 +93,7 @@ sudo chown -R ./ <serviceuser>
 ```
 
 <h4>Setting Up the Wipe Script</h4>
-Since the autowipe.py script does only handle the logic about when a wipe is happening, the actual wipe is done with via the configuration bp/map-wipe-command.\
-The checked-in wipe.sh, is a simple demonstation about how a wipe can be done using LGSM. Depending on the wipe procedure you choose, this script has to be adapted.\
-If creating a completely new wipe script, make sure the script is executable 'chmod +x <path to wipe.sh>' and the service-user is able to execute it.
+Since the autowipe.py script does only handle the logic about when a wipe is happening, the actual wipe is done with via the configuration bp/map-wipe-command. The checked-in wipe.sh, is a simple demonstation about how a wipe can be done using LGSM. Depending on the wipe procedure you choose, this script has to be adapted. If creating a completely new wipe script, make sure the script is executable 'chmod +x <path to wipe.sh>' and the service-user is able to execute it.
 
 <h4>Create Systemd Service</h4>
 
