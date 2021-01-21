@@ -31,10 +31,10 @@ sudo chown -R ./ <serviceuser>
 #A list of days at which the server should execute the map_wipe_command | 1=Monday ... 7=Sunday
 
 "bp_wipe_time": "2200"
-#Time in HHMM format, that defines at which time the bp_wipe_command should be executed
+#Time in 24h HHMM format, that defines at which time the bp_wipe_command should be executed
 
 "map_wipe_time": "1500"
-#Time in HHMM format, that defines at which time the map_wipe_command should be executed
+#Time in 24h HHMM format, that defines at which time the map_wipe_command should be executed
 
 "bp_wipe_types": [ "3" ]
 #A list of types, that define the wipe algorithm
@@ -55,7 +55,7 @@ sudo chown -R ./ <serviceuser>
 #Defines the first day of the blue print wipe. The bp_wipe_command won't execute before this date pasts. Dateformat has to match the given at "date_parse_format".
 
 "first_map_wipe": "2021-1-21"
-#Defines the first day of the blue print wipe. The bp_wipe_command won't execute before this date pasts. Dateformat has to match the given at "date_parse_format".
+#Defines the first day of the blue print wipe. The map_wipe_command won't execute before this date pasts. Dateformat has to match the given at "date_parse_format".
 
 "wipe_check_interval_seconds": "10"
 #Defines the amount of seconds between the autowipe process checks if a new wipe has to be triggered.
@@ -64,10 +64,10 @@ sudo chown -R ./ <serviceuser>
 #Declares the dateformat, that is used to parse the first_bp_wipe and the first_map_wipe.
 
 "bp_wipe_command": "/usr/local/bin/AutoWipe/wipe.sh bpwipe"
-#Command that is execute when a blueprint wipe is triggered.
+#Command that is executed when a blueprint wipe is triggered.
 
 "map_wipe_command": "/usr/local/bin/AutoWipe/wipe.sh mapwipe"
-#Command that is execute when a map wipe is triggered.
+#Command that is executed when a map wipe is triggered.
 
 "log_file_location": "/usr/local/bin/AutoWipe/autowipe.log"
 #Location of the log file
