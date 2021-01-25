@@ -51,7 +51,7 @@ sudo chown -R ./ <serviceuser>
 #A list of types, that define the wipe algorithm
 #Available Types see "bp_wipe_types"
 
-"first_bp_wipe": "2021-2-2"\
+"first_bp_wipe": "2021-2-2"
 #Defines the first day of the blue print wipe. The bp_wipe_command won't execute before this date pasts. Dateformat has to match the given at "date_parse_format".
 
 "first_map_wipe": "2021-1-21"
