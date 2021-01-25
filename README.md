@@ -113,7 +113,7 @@ ExecStart=/bin/bash -c "/usr/local/bin/AutoWipe/autowipe.py -c \"/usr/local/bin/
 RestartSec=15
 Restart=always
 
-[Install]\
+[Install]
 WantedBy=multi-user.target
 ```
 
