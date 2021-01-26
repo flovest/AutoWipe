@@ -21,13 +21,13 @@ sudo git clone https://github.com/flovest/AutoWipeScript.git ./
 sudo chown -R ./ <serviceuser>
 ```
 
-<h4>Configuration File "autowipe.json"</h4>
+<h4>Configuration File</h4> The configuration file "autowipe.json", shows a demo configuration where bp wipes will be triggered on the first Thursday each month, at 22:00 pm CET and map wipes weekly on Wednesday and Saturday at 15:00 pm CET.
 
 ```console
 "bp_wipe_days": [ "4" ]
 #A list of days at which the server should execute the bp_wipe_command | 1=Monday ... 7=Sunday
 
-"map_wipe_days": [ "4" ]
+"map_wipe_days": [ "3" "6" ]
 #A list of days at which the server should execute the map_wipe_command | 1=Monday ... 7=Sunday
 
 "bp_wipe_time": "2200"
