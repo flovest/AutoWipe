@@ -100,14 +100,14 @@ Since the autowipe.py script does only handle the logic about when a wipe is hap
 ```console
 sudo nano /etc/systemd/system/autowipe.service
 ```
-Paste this into the file:
+Paste the following text into the file and make sure to replace "[serviceuser]" with the name of the user this service should run with. In most cases you want to take the same user that runs the targeted rustserver instance.
 ```console
 [Unit]
 Description=Service for AutoWipe script by Florian Oertel
 After=network.target
 
 [Service]
-User=<serviceuser>
+User=[serviceuser]
 Type=simple
 ExecStart=/bin/bash -c "/usr/local/bin/AutoWipe/autowipe.py -c \"/usr/local/bin/AutoWipe/autowipe.json\""
 RestartSec=15
